@@ -1,11 +1,11 @@
 import './styles.css';
-import { ReactComponent as Logo} from './logo.svg';
 import { ReactComponent as MainImage} from './main.svg';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 
 function Home(){
    return(
+       <>
      <div className="home-container">
          <div className="home-content">
              <div className="home-actions" >
@@ -25,7 +25,8 @@ function Home(){
          </div>
          
      </div>
-     
+     <Footer/>
+     </>
    )
 }
 
